@@ -53,7 +53,7 @@
               <div class="card-body">
                 <h5 class="card-title">Kit de Talheres Sustentáveis</h5>
                 <p class="card-text">Um conjunto de talheres reutilizáveis feitos de bambu, perfeito para refeições em casa ou para levar ao trabalho e passeios. Leve, durável e biodegradável.</p>
-                <a class="btn btn-primary" href="#produto-01" class="btn">Ver produto</a>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
               </div>
             </div>
             <div class="card">
@@ -61,7 +61,7 @@
               <div class="card-body">
                 <h5 class="card-title">Velas Aromáticas Naturais</h5>
                 <p class="card-text">Nossas velas são feitas com cera de soja e óleos essenciais, proporcionando um ambiente relaxante e harmonioso. Disponível nos aromas: Lavanda, Canela e Eucalipto.</p>
-                <a class="btn btn-primary" href="#produto-02" class="btn">Ver produto</a>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
               </div>
             </div>
             <div class="card">
@@ -69,7 +69,7 @@
               <div class="card-body">
                 <h5 class="card-title">Sabonetes Artesanais</h5>
                 <p class="card-text">Sabonetes feitos à mão com ingredientes orgânicos como óleo de coco, manteiga de karité e essências naturais. Disponíveis em versões hidratantes, esfoliantes e calmantes.</p>
-                <a class="btn btn-primary" href="#produto-03" class="btn">Ver produto</a>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
               </div>
             </div>
           </div>
@@ -102,7 +102,169 @@
         </div>
       </div>
     </section>
+    
+    <div class="modal fade" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Kit de Talheres Sustentáveis</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Descrição:</h6>
+            <p>Nosso kit de talheres reutilizáveis é fabricado com bambu 100% natural e inclui um garfo, uma faca e uma colher, acompanhados de um estojo de tecido ecológico. Ideal para substituir talheres descartáveis em qualquer ocasião, seja no trabalho, viagens ou passeios ao ar livre. Sustentabilidade com estilo!</p>
+          <h6>Confira nossas ofertas especiai</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <td>Quantidade</td>
+                <td>Valor</td>
+                <td>Valor/Unidade</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>R$ 39,90</td>
+                <td>R$ 39,90</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>R$ 179,90</td>
+                <td>R$ 35,98</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>R$ 329,90</td>
+                <td>R$ 32,99</td>
+              </tr>
+            </tbody>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+          </table>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Velas Aromáticas Naturais</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Descrição:</h6>
+            <p>Produzidas com cera de soja e óleos essenciais puros, nossas velas aromáticas criam um ambiente aconchegante e relaxante. Disponíveis nas fragrâncias Lavanda, Canela e Eucalipto, cada vela vem em um pote de vidro reutilizável com design minimalista, perfeito para decorar e presentear.</p>
+          <h6>Confira nossas ofertas especiai</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <td>Quantidade</td>
+                <td>Valor</td>
+                <td>Valor/Unidade</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>R$ 49,90</td>
+                <td>R$ 49,90</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>R$ 224,90</td>
+                <td>R$ 44,98</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>R$ 399,90</td>
+                <td>R$ 39,99</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sabonetes Artesanais</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Descrição:</h6>
+            <p>Nossos sabonetes são feitos à mão com ingredientes naturais e orgânicos, garantindo um cuidado especial para sua pele. Estão disponíveis nas versões:</p>
+            <ul>
+              <li>Hidratante: 
+                <ul>
+                  <li>Com mel e óleo de amêndoas.</li>
+                </ul>
+              </li>
+              
+              <li>Esfoliante:
+                <ul>
+                  <li>Com sementes de chia para renovação da pele.</li>
+                </ul>
+              </li>
+              <li>Calmante:
+                <ul>
+                  <li>Com camomila para peles sensíveis.</li>
+                </ul>
+              </li>
+            </ul>
+              <p>Cada sabonete é embalado em papel reciclado com estampas exclusivas, tornando-o perfeito também como presente.</p> 
+          <h6>Confira nossas ofertas especiais:</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <td>Quantidade</td>
+                <td>Valor</td>
+                <td>Valor/Unidade</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>R$ 19,90</td>
+                <td>R$ 19,90</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>R$ 89,90</td>
+                <td>R$ 17,98</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>R$ 159,90</td>
+                <td>R$ 15,99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
