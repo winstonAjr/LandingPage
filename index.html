@@ -1,118 +1,117 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website com Bootstrap</title>
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/custom.css">
-    
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Vida Verde</h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website com Bootstrap</title>
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/custom.css">
+  
+</head>
+<body>
+  <header class="bg-success text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Vida Verde</h2>
+        </div>
+        <div class="col">
+          <ul class="nav justify-content-end ">
+            <li class="nav-item "><a class="nav-link active " href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="sobre">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Sobre</h2>
+          <p>Vida Verde nasceu com a missão de trazer soluções sustentáveis e saudáveis para o dia a dia. Nossa paixão pela natureza inspira cada produto, criando um impacto positivo no planeta enquanto cuida da sua saúde. Trabalhamos com matérias-primas naturais e orgânicas, desenvolvendo itens que promovem bem-estar e respeito ao meio ambiente. Escolher Vida Verde é optar por qualidade, consciência e vida equilibrada.</p>
+          
+          <p>Nosso compromisso vai além de oferecer produtos ecológicos; queremos promover uma mudança de consciência em nossa comunidade. Acreditamos que pequenas escolhas diárias podem transformar o mundo ao nosso redor, desde a redução de desperdícios até o apoio a práticas de comércio justo. Cada item da Vida Verde é cuidadosamente pensado para minimizar o impacto ambiental, ajudando você a viver de forma mais sustentável sem abrir mão do conforto e da praticidade.</p>
+          <p>Além disso, temos orgulho de apoiar produtores locais e iniciativas ambientais. Nossa rede de parceiros inclui pequenos agricultores, artesãos e organizações que compartilham nossos valores de sustentabilidade e responsabilidade social. Juntos, construímos um futuro mais verde e justo, onde todos prosperam em harmonia com a natureza. Escolher Vida Verde é fazer parte dessa transformação positiva e duradoura.</p>
+          
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="img-fluid" src="./images/logo.png" alt="imgem-modelo">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="produtos">
+    <div class="container">
+      <h2>Produtos</h2>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="./images/talheres.png" alt="" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Kit de Talheres Sustentáveis</h5>
+              <p class="card-text">Um conjunto de talheres reutilizáveis feitos de bambu, perfeito para refeições em casa ou para levar ao trabalho e passeios. Leve, durável e biodegradável.</p>
+              <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+            </div>
           </div>
-          <div class="col">
-            <ul class="nav justify-content-end">
-              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-              <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
+          <div class="card">
+            <img src="./images/velas.png" alt="" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Velas Aromáticas Naturais</h5>
+              <p class="card-text">Nossas velas são feitas com cera de soja e óleos essenciais, proporcionando um ambiente relaxante e harmonioso. Disponível nos aromas: Lavanda, Canela e Eucalipto.</p>
+              <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/sabonete.png" alt="" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Sabonetes Artesanais</h5>
+              <p class="card-text">Sabonetes feitos à mão com ingredientes orgânicos como óleo de coco, manteiga de karité e essências naturais. Disponíveis em versões hidratantes, esfoliantes e calmantes.</p>
+              <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <section id="sobre">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Sobre</h2>
-            <p>Vida Verde nasceu com a missão de trazer soluções sustentáveis e saudáveis para o dia a dia. Nossa paixão pela natureza inspira cada produto, criando um impacto positivo no planeta enquanto cuida da sua saúde. Trabalhamos com matérias-primas naturais e orgânicas, desenvolvendo itens que promovem bem-estar e respeito ao meio ambiente. Escolher Vida Verde é optar por qualidade, consciência e vida equilibrada.</p>
-
-            <p>Nosso compromisso vai além de oferecer produtos ecológicos; queremos promover uma mudança de consciência em nossa comunidade. Acreditamos que pequenas escolhas diárias podem transformar o mundo ao nosso redor, desde a redução de desperdícios até o apoio a práticas de comércio justo. Cada item da Vida Verde é cuidadosamente pensado para minimizar o impacto ambiental, ajudando você a viver de forma mais sustentável sem abrir mão do conforto e da praticidade.</p>
-            <p>Além disso, temos orgulho de apoiar produtores locais e iniciativas ambientais. Nossa rede de parceiros inclui pequenos agricultores, artesãos e organizações que compartilham nossos valores de sustentabilidade e responsabilidade social. Juntos, construímos um futuro mais verde e justo, onde todos prosperam em harmonia com a natureza. Escolher Vida Verde é fazer parte dessa transformação positiva e duradoura.</p>
+    </div>
+  </section>
+  <section id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2>Contato</h2>
+          <p>Ficou interessado? preencha o formulário para receber uma cotação.</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="form">
             
-          </div>
-          <div class="col">
-            <img class="img-fluid" src="./images/logo.png" alt="imgem-modelo">
-          </div>
+            <div class="input-group">
+              <input class="form-control" type="text" name="nome"  placeholder="Digite seu nome">
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+            </div>
+            <div class="input-group">
+              <textarea class="form-control" name="mensagem" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+            
+          </form>
         </div>
       </div>
-    </section>
-    <section id="produtos">
-      <div class="container">
-        <h2>Produtos</h2>
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <img src="./images/talheres.png" alt="" class="img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Kit de Talheres Sustentáveis</h5>
-                <p class="card-text">Um conjunto de talheres reutilizáveis feitos de bambu, perfeito para refeições em casa ou para levar ao trabalho e passeios. Leve, durável e biodegradável.</p>
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./images/velas.png" alt="" class="img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Velas Aromáticas Naturais</h5>
-                <p class="card-text">Nossas velas são feitas com cera de soja e óleos essenciais, proporcionando um ambiente relaxante e harmonioso. Disponível nos aromas: Lavanda, Canela e Eucalipto.</p>
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./images/sabonete.png" alt="" class="img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Sabonetes Artesanais</h5>
-                <p class="card-text">Sabonetes feitos à mão com ingredientes orgânicos como óleo de coco, manteiga de karité e essências naturais. Disponíveis em versões hidratantes, esfoliantes e calmantes.</p>
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
-              </div>
-            </div>
-          </div>
+    </div>
+  </section>
+  <div class="modal fade" id="modal-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Kit de Talheres Sustentáveis</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
         </div>
-      </div>
-    </section>
-    <section id="contato">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <h2>Contato</h2>
-            <p>Ficou interessado? preencha o formulário para receber uma cotação.</p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <form class="form">
-
-              <div class="input-group">
-                <input class="form-control" type="text" name="nome"  placeholder="Digite seu nome">
-              </div>
-              <div class="input-group">
-                <input class="form-control" type="text" name="email" placeholder="Digite seu email">
-              </div>
-              <div class="input-group">
-                <textarea class="form-control" name="mensagem" rows="5"></textarea>
-              </div>
-              <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <div class="modal fade" id="modal-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Kit de Talheres Sustentáveis</h5>
-            <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-          </div>
-          <div class="modal-body">
-            <h6>Descrição:</h6>
-            <p>Nosso kit de talheres reutilizáveis é fabricado com bambu 100% natural e inclui um garfo, uma faca e uma colher, acompanhados de um estojo de tecido ecológico. Ideal para substituir talheres descartáveis em qualquer ocasião, seja no trabalho, viagens ou passeios ao ar livre. Sustentabilidade com estilo!</p>
+        <div class="modal-body">
+          <h6>Descrição:</h6>
+          <p>Nosso kit de talheres reutilizáveis é fabricado com bambu 100% natural e inclui um garfo, uma faca e uma colher, acompanhados de um estojo de tecido ecológico. Ideal para substituir talheres descartáveis em qualquer ocasião, seja no trabalho, viagens ou passeios ao ar livre. Sustentabilidade com estilo!</p>
           <h6>Confira nossas ofertas especiai</h6>
           <table class="table table-hover table-striped">
             <thead>
@@ -139,18 +138,18 @@
                 <td>R$ 32,99</td>
               </tr>
             </tbody>
-
+            
           </table>
         </div>
-
+        
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
-        </div>
-
+          </div>
+          
         </div>
       </div>
     </div>
-
+    
     <div class="modal fade" id="modal-2">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -161,110 +160,113 @@
           <div class="modal-body">
             <h6>Descrição:</h6>
             <p>Produzidas com cera de soja e óleos essenciais puros, nossas velas aromáticas criam um ambiente aconchegante e relaxante. Disponíveis nas fragrâncias Lavanda, Canela e Eucalipto, cada vela vem em um pote de vidro reutilizável com design minimalista, perfeito para decorar e presentear.</p>
-          <h6>Confira nossas ofertas especiai</h6>
-          <table class="table table-hover table-striped">
-            <thead>
-              <tr>
-                <td>Quantidade</td>
-                <td>Valor</td>
-                <td>Valor/Unidade</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>R$ 49,90</td>
-                <td>R$ 49,90</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>R$ 224,90</td>
-                <td>R$ 44,98</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>R$ 399,90</td>
-                <td>R$ 39,99</td>
-              </tr>
-            </tbody>
-
-          </table>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
-        </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="modal-3">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Sabonetes Artesanais</h5>
-            <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-          </div>
-          <div class="modal-body">
-            <h6>Descrição:</h6>
-            <p>Nossos sabonetes são feitos à mão com ingredientes naturais e orgânicos, garantindo um cuidado especial para sua pele. Estão disponíveis nas versões:</p>
-            <ul>
-              <li>Hidratante: 
-                <ul>
-                  <li>Com mel e óleo de amêndoas.</li>
-                </ul>
-              </li>
+            <h6>Confira nossas ofertas especiai</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <td>Quantidade</td>
+                  <td>Valor</td>
+                  <td>Valor/Unidade</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>R$ 49,90</td>
+                  <td>R$ 49,90</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>R$ 224,90</td>
+                  <td>R$ 44,98</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>R$ 399,90</td>
+                  <td>R$ 39,99</td>
+                </tr>
+              </tbody>
               
-              <li>Esfoliante:
-                <ul>
-                  <li>Com sementes de chia para renovação da pele.</li>
-                </ul>
-              </li>
-              <li>Calmante:
-                <ul>
-                  <li>Com camomila para peles sensíveis.</li>
-                </ul>
-              </li>
-            </ul>
-              <p>Cada sabonete é embalado em papel reciclado com estampas exclusivas, tornando-o perfeito também como presente.</p> 
-          <h6>Confira nossas ofertas especiais:</h6>
-          <table class="table table-hover table-striped">
-            <thead>
-              <tr>
-                <td>Quantidade</td>
-                <td>Valor</td>
-                <td>Valor/Unidade</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>R$ 19,90</td>
-                <td>R$ 19,90</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>R$ 89,90</td>
-                <td>R$ 17,98</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>R$ 159,90</td>
-                <td>R$ 15,99</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
-        </div>
-
+            </table>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+            </div>
+            
+          </div>
         </div>
       </div>
-    </div>
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+      
+      <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sabonetes Artesanais</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Descrição:</h6>
+              <p>Nossos sabonetes são feitos à mão com ingredientes naturais e orgânicos, garantindo um cuidado especial para sua pele. Estão disponíveis nas versões:</p>
+              <ul>
+                <li>Hidratante: 
+                  <ul>
+                    <li>Com mel e óleo de amêndoas.</li>
+                  </ul>
+                </li>
+                
+                <li>Esfoliante:
+                  <ul>
+                    <li>Com sementes de chia para renovação da pele.</li>
+                  </ul>
+                </li>
+                <li>Calmante:
+                  <ul>
+                    <li>Com camomila para peles sensíveis.</li>
+                  </ul>
+                </li>
+              </ul>
+              <p>Cada sabonete é embalado em papel reciclado com estampas exclusivas, tornando-o perfeito também como presente.</p> 
+              <h6>Confira nossas ofertas especiais:</h6>
+              <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <td>Quantidade</td>
+                    <td>Valor</td>
+                    <td>Valor/Unidade</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>R$ 19,90</td>
+                    <td>R$ 19,90</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>R$ 89,90</td>
+                    <td>R$ 17,98</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>R$ 159,90</td>
+                    <td>R$ 15,99</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <footer class="bg-success text-white text-center py-3">
+          <p>&copy; 2025 Landing Page Responsiva. Todos os direitos reservados.</p>
+        </footer>
+        
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      </body>
+      </html>

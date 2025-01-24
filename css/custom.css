@@ -13,3 +13,6 @@ input, textarea{
     float: left;
     margin: 5px;
 }
+a{
+    color: white !important;
+}
