@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Website com Bootstrap</title>
+  <title>Landing Page com Bootstrap</title>
+
+   <!-- CSS -->
   <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/custom.css">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
   
 </head>
 <body>
   <header class="bg-success text-white py-5">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h2>Vida Verde</h2>
+        <div class="col-3">
+          <h1>Vida Verde</h1>
         </div>
-        <div class="col">
+        <div class="col col-sm-12">
           <ul class="nav justify-content-end ">
             <li class="nav-item "><a class="nav-link active " href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
@@ -38,34 +45,39 @@
           
         </div>
         <div class="col-md-6 col-sm-12">
-          <img class="img-fluid" src="./images/logo.png" alt="imgem-modelo">
+          <img class="img-fluid" id="logo" src="./images/logo.png" alt="imgem-modelo">
         </div>
       </div>
     </div>
   </section>
   <section id="produtos">
+    
     <div class="container">
       <h2>Produtos</h2>
-      <div class="row">
+      <div class="row row-col-md-2 row-col-sm-1">
         <div class="col">
           <div class="card">
-            <img src="./images/talheres.png" alt="" class="img-fluid">
+            <img src="./images/talheres.png" alt="talheres" class="img-fluid">
             <div class="card-body">
               <h5 class="card-title">Kit de Talheres Sustentáveis</h5>
               <p class="card-text">Um conjunto de talheres reutilizáveis feitos de bambu, perfeito para refeições em casa ou para levar ao trabalho e passeios. Leve, durável e biodegradável.</p>
               <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
             </div>
           </div>
+        </div>
+        <div class="col">
           <div class="card">
-            <img src="./images/velas.png" alt="" class="img-fluid">
+            <img src="./images/velas.png" alt="velas" class="img-fluid">
             <div class="card-body">
               <h5 class="card-title">Velas Aromáticas Naturais</h5>
               <p class="card-text">Nossas velas são feitas com cera de soja e óleos essenciais, proporcionando um ambiente relaxante e harmonioso. Disponível nos aromas: Lavanda, Canela e Eucalipto.</p>
               <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
             </div>
           </div>
+        </div>
+        <div class="col">
           <div class="card">
-            <img src="./images/sabonete.png" alt="" class="img-fluid">
+            <img src="./images/sabonete.png" alt="sabonete" class="img-fluid">
             <div class="card-body">
               <h5 class="card-title">Sabonetes Artesanais</h5>
               <p class="card-text">Sabonetes feitos à mão com ingredientes orgânicos como óleo de coco, manteiga de karité e essências naturais. Disponíveis em versões hidratantes, esfoliantes e calmantes.</p>
@@ -75,6 +87,7 @@
         </div>
       </div>
     </div>
+    
   </section>
   <section id="contato">
     <div class="container">
@@ -264,10 +277,11 @@
           </div>
         </div>
         <footer class="bg-success text-white text-center py-3">
-          <p>&copy; 2025 Landing Page Responsiva. Todos os direitos reservados.
-            <small>Desenvolvido por: Winston Almeida</small></p>
+          <p>&copy; 2025 Landing Page Bootstrap. Todos os direitos reservados.<br><small>Desenvolvido por: Winston Almeida</small></p>
         </footer>
         
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
       </body>
       </html>
+      
+      
