@@ -32,9 +32,12 @@ footer small {
     font-size: 80%;
     display: block;
 }
-@media (max-width: 592px) {
+@media (max-width: 700px) {
     h1{
         font-size: 50px;
         margin: auto !important;
+    }
+    .col{
+        flex: none!important;
     }
 }
